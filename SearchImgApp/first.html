@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+        background-color: #6baee2;
+    }
+
+    #search {
+        width: 60%;
+        max-width: 400px;
+        padding: 10px 20px;
+        border: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        border-radius: 5px;
+        color: #333;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #138065;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 10px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+        border: 5px solid black;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin: 40px 0 60px 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        background-color: rgb(155, 146, 186);
+
+    }
+    .setImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+</style>
+
+<body>
+    <h1>Image Search App</h1>
+
+    <div class="form">
+        <input type="text" id="search" placeholder="Search Photos" class="form">
+        <button onclick="SearchPhotos()" class="btn">Search</button>
+    </div>
+    <div id="result">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="sct.js"></script>
+</body>
+
+</html>
